@@ -102,5 +102,5 @@ Each module follows this pattern (see `scss/components/_card.scss`):
 
 These bugs are inherited from upstream. Keep them in mind; fix them only when asked, because fixing them changes the generated CSS:
 - `scss/utilities/_reduce-motion.scss:4`: `enable-transitions and enable-important` has no `$`, so it reads as truthy strings and the flags are ignored.
-- `scss/content/_table.scss:52`: same problem, `@if enable-classes` has no `$`.
+- `scss/content/_table.scss:51`: same problem, `@if enable-classes` has no `$`.
 - `scripts/build-themes.js`: the TTY-only `clearLine`/`cursorTo` calls described above.
